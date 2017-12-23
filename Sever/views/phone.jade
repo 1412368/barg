@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  ul
+  each bike in drivers
+    li
+      p= bike.id
+      p
+        b= bike.driver
+      p= bike.current_lat
+      p= bike.current_lng
+      p= bike.type
+      p= bike.state
